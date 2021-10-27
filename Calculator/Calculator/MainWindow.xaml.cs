@@ -24,5 +24,25 @@ namespace Calculator
         {
             InitializeComponent();
         }
+
+        private void textBox_zahl1_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void textBox_zahl2_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void comboBox_operation_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void calculate_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

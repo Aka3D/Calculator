@@ -7,6 +7,45 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="35"/>
+            <RowDefinition Height="35"/>
+            <RowDefinition Height="35"/>
+            <RowDefinition Height="35"/>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="0.2*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
         
+        <Label x:Name="title" Content="Calculator" Grid.ColumnSpan="5" Grid.Row="1"/>
+
+        <Label x:Name="result" Content="Resultat:" Grid.ColumnSpan="5" Grid.Row="2"/>
+        <Label x:Name="calculation" Content="" Grid.ColumnSpan="5" Grid.Row="3"/>
+
+        <TextBox x:Name="textBox_number1" Height="23" TextWrapping="Wrap" Text="" Width="150" Margin="0" Grid.Column="0" Grid.Row="4" 
+                 ToolTip="Bitte die erste Zahl eingeben" TextChanged="textBox_zahl1_TextChanged"/>
+        <Label x:Name="and" Content="und" Grid.Column="1" Grid.Row="4" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <TextBox x:Name="textBox_number2" Height="23" TextWrapping="Wrap" Text="" Width="150" Margin="0" Grid.Column="2" Grid.Row="4" 
+                 ToolTip="Bitte die zweite Zahl eingeben" TextChanged="textBox_zahl2_TextChanged"/>
+        <ComboBox x:Name="comboBox_Operation" Width="150" Height="23" Text="Operation" Margin="0" Grid.Column="3" Grid.Row="4" SelectionChanged="comboBox_operation_SelectionChanged">
+            <ComboBoxItem Content="Operation auswählen" Selector.IsSelected="True"/>
+            <ComboBoxItem Content="+"/>
+            <ComboBoxItem Content="-"/>
+            <ComboBoxItem Content="*"/>
+            <ComboBoxItem Content="/"/>
+        </ComboBox>
+        <Button Name="btnCalculate" Content="Berechnen" Grid.Column="4" Grid.Row="4" HorizontalContentAlignment="Center" VerticalAlignment="Center" Margin="0" Height="23" Width="150" Click="calculate_Click" />
+
+        <Label x:Name="history" Content="Verlauf:" Grid.ColumnSpan="5" Grid.Row="5"/>
+
+
+
     </Grid>
 </Window>
