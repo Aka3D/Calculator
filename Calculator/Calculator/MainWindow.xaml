@@ -5,11 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Calculator"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="600" Width="800" >
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="35"/>
-            <RowDefinition Height="35"/>
+            <RowDefinition Height="50"/>
             <RowDefinition Height="35"/>
             <RowDefinition Height="35"/>
             <RowDefinition Height="80"/>
@@ -23,11 +23,11 @@
             <ColumnDefinition Width="1*"/>
             <ColumnDefinition Width="1*"/>
         </Grid.ColumnDefinitions>
-        
-        <Label x:Name="title" Content="Calculator" Grid.ColumnSpan="5" Grid.Row="1"/>
 
-        <Label x:Name="result" Content="Resultat:" Grid.ColumnSpan="5" Grid.Row="2"/>
-        <Label x:Name="calculation" Content="" Grid.ColumnSpan="5" Grid.Row="3"/>
+        <Label x:Name="title" Content="Calculator" FontSize="35" Grid.ColumnSpan="5" Grid.Row="1" Margin="19.5,0,0,0"/>
+
+        <Label x:Name="result" Content="Resultat:" Grid.ColumnSpan="5" Grid.Row="2" Margin="19.5,0,0,0" VerticalAlignment="Bottom" FontSize="15"/>
+        <Label x:Name="calculation" Content="" Grid.ColumnSpan="5" Grid.Row="3" Margin="19.5,0,0,0"/>
 
         <TextBox x:Name="textBox_number1" Height="23" TextWrapping="Wrap" Text="" Width="150" Margin="0" Grid.Column="0" Grid.Row="4" 
                  ToolTip="Bitte die erste Zahl eingeben" TextChanged="textBox_zahl1_TextChanged"/>
@@ -43,9 +43,6 @@
         </ComboBox>
         <Button Name="btnCalculate" Content="Berechnen" Grid.Column="4" Grid.Row="4" HorizontalContentAlignment="Center" VerticalAlignment="Center" Margin="0" Height="23" Width="150" Click="calculate_Click" />
 
-        <Label x:Name="history" Content="Verlauf:" Grid.ColumnSpan="5" Grid.Row="5"/>
-
-
-
+        <Label x:Name="history" Content="Verlauf:" Grid.ColumnSpan="5" Grid.Row="5" VerticalAlignment="Bottom" FontSize="15" Margin="19.5,0,0,0"/>
     </Grid>
 </Window>

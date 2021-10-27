@@ -1,4 +1,3 @@
-C:\Users\vmadmin\Documents\VisualStudio-Workspace\Calculator\Calculator\Calculator\obj\Debug\Calculator.csproj.AssemblyReference.cache
 C:\Users\vmadmin\Documents\VisualStudio-Workspace\Calculator\Calculator\Calculator\obj\Debug\MainWindow.g.cs
 C:\Users\vmadmin\Documents\VisualStudio-Workspace\Calculator\Calculator\Calculator\obj\Debug\App.g.cs
 C:\Users\vmadmin\Documents\VisualStudio-Workspace\Calculator\Calculator\Calculator\obj\Debug\Calculator_MarkupCompile.cache
