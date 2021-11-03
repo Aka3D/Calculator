@@ -12,3 +12,4 @@ C:\Users\vmadmin\Documents\VisualStudio-Workspace\Calculator\Calculator\Calculat
 C:\Users\vmadmin\Documents\VisualStudio-Workspace\Calculator\Calculator\Calculator\obj\Debug\Calculator.csproj.CoreCompileInputs.cache
 C:\Users\vmadmin\Documents\VisualStudio-Workspace\Calculator\Calculator\Calculator\obj\Debug\Calculator.exe
 C:\Users\vmadmin\Documents\VisualStudio-Workspace\Calculator\Calculator\Calculator\obj\Debug\Calculator.pdb
+C:\Users\vmadmin\Documents\VisualStudio-Workspace\Calculator\Calculator\Calculator\obj\Debug\Calculator.csproj.AssemblyReference.cache

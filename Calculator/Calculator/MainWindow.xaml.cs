@@ -25,6 +25,53 @@ namespace Calculator
             InitializeComponent();
         }
 
+        float endresult;
+        float op;
+
+        enum State
+        {
+            Normal,
+            Addition,
+            Subtraction,
+            Multiplication,
+            Division
+        }
+
+        State state = State.Normal;
+
+        private void loadState(float number1, float number2, float endresult)
+        {
+            switch (state)
+            {
+                case State.Normal:
+                    
+
+                    break;
+                case State.Addition:
+
+                    endresult = number1 + number2;
+
+
+                    break;
+                case State.Subtraction:
+                    
+
+
+
+                    break;
+                case State.Multiplication:
+                    
+
+
+
+                    break;
+                case State.Division:
+
+
+                    break;
+            }
+        }
+
         private void textBox_zahl1_TextChanged(object sender, TextChangedEventArgs e)
         {
 
@@ -42,7 +89,9 @@ namespace Calculator
 
         private void calculate_Click(object sender, RoutedEventArgs e)
         {
-
+            float number1 = float.Parse(textBox_number1.Text);
+            float number2 = float.Parse(textBox_number2.Text);
+            calculation.Content = $"{number1} {op} {number2} = {endresult}";
         }
     }
 }
