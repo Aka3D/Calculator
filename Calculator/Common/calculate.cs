@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Calculate.DataAccess;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,12 +7,17 @@ using System.Threading.Tasks;
 
 namespace Common
 {
-    class calculate
+    public class calculate
     {
-        float endresult;
-        float op;
+        public double Zahl1 { get; set; }
+        public double Zahl2 { get; set; }
+        public string Operation { get; set; }
+        public int fk_UserId { get; set; }
 
-        enum State
+
+
+
+        public enum State
         {
             Normal,
             Addition,
@@ -20,38 +26,47 @@ namespace Common
             Division
         }
 
-        State state = State.Normal;
+        static public State state = State.Normal;
 
-        private void loadState(float number1, float number2, float endresult)
+        public static string LoadState(float number1, float number2)
         {
+            var calc = new calculate();
+            string endresult;
             switch (state)
             {
-                case State.Normal:
-                    
-
-                    break;
                 case State.Addition:
 
-                    endresult = number1 + number2;
+                    endresult = string.Format($"{number1 + number2}");
+                    return endresult;
 
-
-                    break;
                 case State.Subtraction:
-                    
 
+                    endresult = string.Format($"{number1 - number2}");
+                    return endresult;
 
-
-                    break;
                 case State.Multiplication:
-                    
 
+                    endresult = string.Format($"{number1 * number2}");
+                    return endresult;
 
-
-                    break;
                 case State.Division:
 
+                    endresult = string.Format($"{number1 / number2}");
+                    return endresult;
+                default:
+                    endresult = "no answer";
+                    return endresult;
 
-                    break;
+            }
+        }
+
+        public void Save()
+        {
+            using (var context = new CalculatorDBEntities())
+            {
+                var calc = MapLltoDa(this);
+                context.Calculation.Add(calc);
+                context.SaveChanges();
             }
         }
     }

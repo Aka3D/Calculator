@@ -44,5 +44,11 @@
     <Compile Include="calculate.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Calculate.DataAccess\Calculate.DataAccess.csproj">
+      <Project>{F6F8DC8D-CE23-41BA-B44B-E988BC3DE276}</Project>
+      <Name>Calculate.DataAccess</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -105,6 +105,16 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Calculate.DataAccess\Calculate.DataAccess.csproj">
+      <Project>{f6f8dc8d-ce23-41ba-b44b-e988bc3de276}</Project>
+      <Name>Calculate.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{c2e29cf3-747f-4cd4-ab64-9b46edeb4bf2}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

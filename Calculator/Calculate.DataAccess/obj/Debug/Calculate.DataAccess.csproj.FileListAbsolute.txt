@@ -1,0 +1,12 @@
+C:\Users\vmadmin\Documents\VisualStudio-Workspace\Calculator\Calculator\Calculate.DataAccess\bin\Debug\Calculate.DataAccess.dll.config
+C:\Users\vmadmin\Documents\VisualStudio-Workspace\Calculator\Calculator\Calculate.DataAccess\bin\Debug\Calculate.DataAccess.dll
+C:\Users\vmadmin\Documents\VisualStudio-Workspace\Calculator\Calculator\Calculate.DataAccess\bin\Debug\Calculate.DataAccess.pdb
+C:\Users\vmadmin\Documents\VisualStudio-Workspace\Calculator\Calculator\Calculate.DataAccess\bin\Debug\EntityFramework.dll
+C:\Users\vmadmin\Documents\VisualStudio-Workspace\Calculator\Calculator\Calculate.DataAccess\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\vmadmin\Documents\VisualStudio-Workspace\Calculator\Calculator\Calculate.DataAccess\bin\Debug\EntityFramework.xml
+C:\Users\vmadmin\Documents\VisualStudio-Workspace\Calculator\Calculator\Calculate.DataAccess\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\vmadmin\Documents\VisualStudio-Workspace\Calculator\Calculator\Calculate.DataAccess\obj\Debug\Calculate.DataAccess.csproj.AssemblyReference.cache
+C:\Users\vmadmin\Documents\VisualStudio-Workspace\Calculator\Calculator\Calculate.DataAccess\obj\Debug\Calculate.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\vmadmin\Documents\VisualStudio-Workspace\Calculator\Calculator\Calculate.DataAccess\obj\Debug\Calculate.DataAccess.csproj.CopyComplete
+C:\Users\vmadmin\Documents\VisualStudio-Workspace\Calculator\Calculator\Calculate.DataAccess\obj\Debug\Calculate.DataAccess.dll
+C:\Users\vmadmin\Documents\VisualStudio-Workspace\Calculator\Calculator\Calculate.DataAccess\obj\Debug\Calculate.DataAccess.pdb
