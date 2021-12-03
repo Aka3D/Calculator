@@ -12,4 +12,3 @@ C:\Users\vmadmin\Documents\VisualStudio-Workspace\Calculator\Calculator\Common\o
 C:\Users\vmadmin\Documents\VisualStudio-Workspace\Calculator\Calculator\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
 C:\Users\vmadmin\Documents\VisualStudio-Workspace\Calculator\Calculator\Common\obj\Debug\Common.dll
 C:\Users\vmadmin\Documents\VisualStudio-Workspace\Calculator\Calculator\Common\obj\Debug\Common.pdb
-C:\Users\vmadmin\Documents\VisualStudio-Workspace\Calculator\Calculator\Common\obj\Debug\Common.csproj.CopyComplete

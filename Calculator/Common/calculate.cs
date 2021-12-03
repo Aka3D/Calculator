@@ -68,7 +68,7 @@ namespace Common
             {
                 Zahl1 = number1,
                 Zahl2 = number2,
-                Operation = op,
+                Operation = state.ToString(),
                 Resultat = endresult,
                 Rechnung = $"{number1} {op} {number2} = {endresult}",
                 fk_UserId = loginId,
