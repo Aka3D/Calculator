@@ -24,3 +24,9 @@ C:\Users\vmadmin\Documents\VisualStudio-Workspace\Calculator\Calculator\Calculat
 C:\Users\vmadmin\Documents\VisualStudio-Workspace\Calculator\Calculator\Calculator\obj\Debug\Calculator.csproj.CopyComplete
 C:\Users\vmadmin\Documents\VisualStudio-Workspace\Calculator\Calculator\Calculator\obj\Debug\Calculator.exe
 C:\Users\vmadmin\Documents\VisualStudio-Workspace\Calculator\Calculator\Calculator\obj\Debug\Calculator.pdb
+C:\Users\vmadmin\Documents\VisualStudio-Workspace\Calculator\Calculator\Calculator\bin\Debug\MaterialDesignColors.dll
+C:\Users\vmadmin\Documents\VisualStudio-Workspace\Calculator\Calculator\Calculator\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\vmadmin\Documents\VisualStudio-Workspace\Calculator\Calculator\Calculator\bin\Debug\MaterialDesignColors.pdb
+C:\Users\vmadmin\Documents\VisualStudio-Workspace\Calculator\Calculator\Calculator\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\vmadmin\Documents\VisualStudio-Workspace\Calculator\Calculator\Calculator\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\vmadmin\Documents\VisualStudio-Workspace\Calculator\Calculator\Calculator\obj\Debug\App.baml
