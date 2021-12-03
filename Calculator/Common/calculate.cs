@@ -13,6 +13,8 @@ namespace Common
         public double Zahl2 { get; set; }
         public string Operation { get; set; }
         public int fk_UserId { get; set; }
+        public string Resultat { get; set; }
+        public string Rechnung { get; set; }
 
         public enum State
         {
@@ -57,7 +59,7 @@ namespace Common
                     op = "/";
                     break;
                 default:
-                    endresult = "no answer";
+                    endresult = "Keine Operation ausgewählt";
                     break;
 
             }
@@ -67,6 +69,8 @@ namespace Common
                 Zahl1 = number1,
                 Zahl2 = number2,
                 Operation = op,
+                Resultat = endresult,
+                Rechnung = $"{number1} {op} {number2} = {endresult}",
                 fk_UserId = loginId,
             };
 
@@ -84,10 +88,12 @@ namespace Common
                 {
                     Calculate.DataAccess.Calculate calc = new Calculate.DataAccess.Calculate
                     {
-                        fk_UserId = this.fk_UserId,
-                        Operation = this.Operation,
+                        Zahl2 = this.Zahl2,
                         Zahl1 = this.Zahl1,
-                        Zahl2 = this.Zahl2
+                        Operation = this.Operation,
+                        Resultat = this.Resultat,
+                        Rechnung = this.Rechnung,
+                        fk_UserId = this.fk_UserId
                     };
                     context.Calculate.Add(calc);
                     context.SaveChanges();

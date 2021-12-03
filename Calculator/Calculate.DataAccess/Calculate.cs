@@ -19,5 +19,7 @@ namespace Calculate.DataAccess
         public double Zahl2 { get; set; }
         public string Operation { get; set; }
         public int fk_UserId { get; set; }
+        public string Resultat { get; set; }
+        public string Rechnung { get; set; }
     }
 }

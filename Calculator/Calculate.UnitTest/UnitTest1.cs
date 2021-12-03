@@ -3,6 +3,7 @@ using System;
 
 namespace Calculate.UnitTest
 {
+    /*
     [TestClass]
     public class UnitTest1
     {
@@ -12,4 +13,5 @@ namespace Calculate.UnitTest
 
         }
     }
+    */
 }

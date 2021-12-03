@@ -7,7 +7,9 @@
     <Property Name="BerechnungId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="Zahl1" Type="float" Nullable="false" />
     <Property Name="Zahl2" Type="float" Nullable="false" />
-    <Property Name="Operation" Type="varchar" MaxLength="1" Nullable="false" />
+    <Property Name="Operation" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="Resultat" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="Rechnung" Type="varchar" MaxLength="255" Nullable="false" />
     <Property Name="fk_UserId" Type="int" Nullable="false" />
   </EntityType>
   <EntityType Name="User">
