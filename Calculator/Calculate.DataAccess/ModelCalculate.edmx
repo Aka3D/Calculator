@@ -4,33 +4,33 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-    <Schema Namespace="CalculatorDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
-        <EntityType Name="Calculate">
-          <Key>
-            <PropertyRef Name="BerechnungId" />
-          </Key>
-          <Property Name="BerechnungId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="Zahl1" Type="float" Nullable="false" />
-          <Property Name="Zahl2" Type="float" Nullable="false" />
-          <Property Name="Operation" Type="varchar" MaxLength="255" Nullable="false" />
-          <Property Name="Resultat" Type="varchar" MaxLength="255" Nullable="false" />
-          <Property Name="Rechnung" Type="varchar" MaxLength="255" Nullable="false" />
-          <Property Name="fk_UserId" Type="int" Nullable="false" />
-        </EntityType>
-        <EntityType Name="User">
-          <Key>
-            <PropertyRef Name="UserId" />
-          </Key>
-          <Property Name="UserId" Type="int" Nullable="false" />
-          <Property Name="Vorname" Type="varchar" MaxLength="255" Nullable="false" />
-          <Property Name="Nachname" Type="varchar" MaxLength="255" Nullable="false" />
-          <Property Name="Pwd" Type="varchar" MaxLength="255" Nullable="false" />
-        </EntityType>
-        <EntityContainer Name="CalculatorDBModelStoreContainer">
-          <EntitySet Name="Calculate" EntityType="Self.Calculate" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="User" EntityType="Self.User" Schema="dbo" store:Type="Tables" />
-        </EntityContainer>
-      </Schema></edmx:StorageModels>
+    <Schema Namespace="CalculatorDBModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2012" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="CalculatorDBModelStoreContainer">
+    <EntitySet Name="Calculate" EntityType="CalculatorDBModel.Store.Calculate" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="User" EntityType="CalculatorDBModel.Store.User" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="Calculate">
+    <Key>
+      <PropertyRef Name="BerechnungId" />
+    </Key>
+    <Property Name="BerechnungId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Zahl1" Type="float" Nullable="false" />
+    <Property Name="Zahl2" Type="float" Nullable="false" />
+    <Property Name="Operation" Type="varchar" Nullable="false" MaxLength="255" />
+    <Property Name="fk_UserId" Type="int" Nullable="false" />
+    <Property Name="Resultat" Type="varchar" Nullable="false" MaxLength="255" />
+    <Property Name="Rechnung" Type="varchar" Nullable="false" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="int" Nullable="false" />
+    <Property Name="Vorname" Type="varchar" Nullable="false" MaxLength="255" />
+    <Property Name="Nachname" Type="varchar" Nullable="false" MaxLength="255" />
+    <Property Name="Pwd" Type="varchar" Nullable="false" MaxLength="255" />
+  </EntityType>
+</Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="CalculatorDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -63,34 +63,33 @@
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
     <edmx:Mappings>
-      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="CalculatorDBModelStoreContainer" CdmEntityContainer="CalculatorDBEntities">
-          <EntitySetMapping Name="Calculate">
-            <EntityTypeMapping TypeName="CalculatorDBModel.Calculate">
-              <MappingFragment StoreEntitySet="Calculate">
-                <ScalarProperty Name="Rechnung" ColumnName="Rechnung" />
-                <ScalarProperty Name="Resultat" ColumnName="Resultat" />
-                <ScalarProperty Name="BerechnungId" ColumnName="BerechnungId" />
-                <ScalarProperty Name="Zahl1" ColumnName="Zahl1" />
-                <ScalarProperty Name="Zahl2" ColumnName="Zahl2" />
-                <ScalarProperty Name="Operation" ColumnName="Operation" />
-                <ScalarProperty Name="fk_UserId" ColumnName="fk_UserId" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="User">
-            <EntityTypeMapping TypeName="CalculatorDBModel.User">
-              <MappingFragment StoreEntitySet="User">
-                <ScalarProperty Name="UserId" ColumnName="UserId" />
-                <ScalarProperty Name="Vorname" ColumnName="Vorname" />
-                <ScalarProperty Name="Nachname" ColumnName="Nachname" />
-                <ScalarProperty Name="Pwd" ColumnName="Pwd" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-        </EntityContainerMapping>
-      </Mapping>
-    </edmx:Mappings>
+    <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="CalculatorDBModelStoreContainer" CdmEntityContainer="CalculatorDBEntities">
+    <EntitySetMapping Name="Calculate">
+      <EntityTypeMapping TypeName="IsTypeOf(CalculatorDBModel.Calculate)">
+        <MappingFragment StoreEntitySet="Calculate">
+          <ScalarProperty Name="BerechnungId" ColumnName="BerechnungId" />
+          <ScalarProperty Name="Zahl1" ColumnName="Zahl1" />
+          <ScalarProperty Name="Zahl2" ColumnName="Zahl2" />
+          <ScalarProperty Name="Operation" ColumnName="Operation" />
+          <ScalarProperty Name="fk_UserId" ColumnName="fk_UserId" />
+          <ScalarProperty Name="Resultat" ColumnName="Resultat" />
+          <ScalarProperty Name="Rechnung" ColumnName="Rechnung" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="User">
+      <EntityTypeMapping TypeName="IsTypeOf(CalculatorDBModel.User)">
+        <MappingFragment StoreEntitySet="User">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="Vorname" ColumnName="Vorname" />
+          <ScalarProperty Name="Nachname" ColumnName="Nachname" />
+          <ScalarProperty Name="Pwd" ColumnName="Pwd" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping></edmx:Mappings>
   </edmx:Runtime>
   <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
   <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
@@ -104,7 +103,7 @@
         <DesignerProperty Name="ValidateOnBuild" Value="true" />
         <DesignerProperty Name="EnablePluralization" Value="false" />
         <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
-        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="UseLegacyProvider" Value="False" />
         <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
       </DesignerInfoPropertySet>
     </Options>

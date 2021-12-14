@@ -93,6 +93,7 @@
       <DependentUpon>ModelCalculate.edmx</DependentUpon>
       <LastGenOutput>ModelCalculate.Context.cs</LastGenOutput>
     </Content>
+    <Content Include="ModelCalculate.edmx.sql" />
     <Content Include="ModelCalculate.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>ModelCalculate.edmx</DependentUpon>
