@@ -102,9 +102,7 @@ namespace Common
             catch (Exception e)
             {
                 throw;
-            }
-            
+            }   
         }
-        
     }
 }
