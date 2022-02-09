@@ -5,11 +5,8 @@
       <PropertyRef Name="BerechnungId" />
     </Key>
     <Property Name="BerechnungId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="Zahl1" Type="Double" Nullable="false" />
-    <Property Name="Zahl2" Type="Double" Nullable="false" />
-    <Property Name="Operation" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="fk_UserId" Type="Int32" Nullable="false" />
-    <Property Name="Resultat" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Resultat" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
     <Property Name="Rechnung" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
   </EntityType>
   <EntityType Name="User">

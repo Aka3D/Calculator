@@ -1,28 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Schema Namespace="CalculatorDBModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2012" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
-  <EntityContainer Name="CalculatorDBModelStoreContainer">
-    <EntitySet Name="Calculate" EntityType="CalculatorDBModel.Store.Calculate" store:Type="Tables" Schema="dbo" />
-    <EntitySet Name="User" EntityType="CalculatorDBModel.Store.User" store:Type="Tables" Schema="dbo" />
-  </EntityContainer>
+<Schema Namespace="CalculatorDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
   <EntityType Name="Calculate">
     <Key>
       <PropertyRef Name="BerechnungId" />
     </Key>
     <Property Name="BerechnungId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="Zahl1" Type="float" Nullable="false" />
-    <Property Name="Zahl2" Type="float" Nullable="false" />
-    <Property Name="Operation" Type="varchar" Nullable="false" MaxLength="255" />
     <Property Name="fk_UserId" Type="int" Nullable="false" />
-    <Property Name="Resultat" Type="varchar" Nullable="false" MaxLength="255" />
-    <Property Name="Rechnung" Type="varchar" Nullable="false" MaxLength="255" />
+    <Property Name="Resultat" Type="varchar" MaxLength="255" />
+    <Property Name="Rechnung" Type="varchar" MaxLength="255" Nullable="false" />
   </EntityType>
   <EntityType Name="User">
     <Key>
       <PropertyRef Name="UserId" />
     </Key>
     <Property Name="UserId" Type="int" Nullable="false" />
-    <Property Name="Vorname" Type="varchar" Nullable="false" MaxLength="255" />
-    <Property Name="Nachname" Type="varchar" Nullable="false" MaxLength="255" />
-    <Property Name="Pwd" Type="varchar" Nullable="false" MaxLength="255" />
+    <Property Name="Vorname" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="Nachname" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="Pwd" Type="varchar" MaxLength="255" Nullable="false" />
   </EntityType>
+  <EntityContainer Name="CalculatorDBModelStoreContainer">
+    <EntitySet Name="Calculate" EntityType="Self.Calculate" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="User" EntityType="Self.User" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
 </Schema>

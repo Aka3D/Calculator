@@ -5,9 +5,6 @@
       <EntityTypeMapping TypeName="IsTypeOf(CalculatorDBModel.Calculate)">
         <MappingFragment StoreEntitySet="Calculate">
           <ScalarProperty Name="BerechnungId" ColumnName="BerechnungId" />
-          <ScalarProperty Name="Zahl1" ColumnName="Zahl1" />
-          <ScalarProperty Name="Zahl2" ColumnName="Zahl2" />
-          <ScalarProperty Name="Operation" ColumnName="Operation" />
           <ScalarProperty Name="fk_UserId" ColumnName="fk_UserId" />
           <ScalarProperty Name="Resultat" ColumnName="Resultat" />
           <ScalarProperty Name="Rechnung" ColumnName="Rechnung" />
