@@ -38,7 +38,9 @@
         <Button Name="btnCalculate" Content="Berechnen" Grid.Column="4" Grid.Row="2" HorizontalContentAlignment="Center" VerticalAlignment="Center" Margin="0" Height="23" Width="150" Click="calculate_Click"/>
 
         <Label x:Name="lblresult" Content="Resultat:" Grid.ColumnSpan="5" Grid.Row="3" Margin="19.5,0,0,0" VerticalAlignment="Bottom" FontSize="15"/>
-        <Label x:Name="lblcalculation" Content="" Grid.ColumnSpan="5" Grid.Row="4" Margin="19.5,0,0,0"/>
+        <Label x:Name="lblcalculation" Content="" Grid.ColumnSpan="4" Grid.Row="4" Margin="19.5,0,0,0"/>
+        <Button Name="btnFraction" Content="Zu Bruch konvertieren" Grid.Column="4" Grid.Row="4" HorizontalContentAlignment="Center" VerticalAlignment="Center" Margin="0" Height="23" Width="150" Click="fraction_Click"/>
+        <Button Name="btnDouble" Content="Zu Dezimal konvertieren" Grid.Column="4" Grid.Row="4" HorizontalContentAlignment="Center" VerticalAlignment="Center" Margin="0" Height="23" Width="150" Click="double_Click"/>
 
         <Label x:Name="lblhistory" Content="Verlauf:" Grid.ColumnSpan="5" Grid.Row="5" VerticalAlignment="Bottom" FontSize="15" Margin="19.5,0,0,0"/>
     </Grid>

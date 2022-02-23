@@ -30,7 +30,6 @@ C:\Users\vmadmin\Documents\VisualStudio-Workspace\Calculator\Calculator\Calculat
 C:\Users\vmadmin\Documents\VisualStudio-Workspace\Calculator\Calculator\Calculator\bin\Debug\MaterialDesignThemes.Wpf.pdb
 C:\Users\vmadmin\Documents\VisualStudio-Workspace\Calculator\Calculator\Calculator\bin\Debug\MaterialDesignThemes.Wpf.xml
 C:\Users\vmadmin\Documents\VisualStudio-Workspace\Calculator\Calculator\Calculator\obj\Debug\App.baml
-C:\Users\vmadmin\Documents\GitHub\Calculator\Calculator\Calculator\obj\Debug\Calculator.csprojAssemblyReference.cache
 C:\Users\vmadmin\Documents\GitHub\Calculator\Calculator\Calculator\obj\Debug\MainWindow.g.cs
 C:\Users\vmadmin\Documents\GitHub\Calculator\Calculator\Calculator\obj\Debug\App.g.cs
 C:\Users\vmadmin\Documents\GitHub\Calculator\Calculator\Calculator\obj\Debug\Calculator_MarkupCompile.cache
@@ -66,3 +65,7 @@ C:\Users\vmadmin\Documents\GitHub\Calculator\Calculator\Calculator\obj\Debug\Cal
 C:\Users\vmadmin\Documents\GitHub\Calculator\Calculator\Calculator\obj\Debug\Calculator.csproj.CopyComplete
 C:\Users\vmadmin\Documents\GitHub\Calculator\Calculator\Calculator\obj\Debug\Calculator.exe
 C:\Users\vmadmin\Documents\GitHub\Calculator\Calculator\Calculator\obj\Debug\Calculator.pdb
+C:\Users\vmadmin\Documents\GitHub\Calculator\Calculator\Calculator\obj\Debug\Calculator.csproj.AssemblyReference.cache
+C:\Users\vmadmin\Documents\GitHub\Calculator\Calculator\Calculator\bin\Debug\Fractions.dll
+C:\Users\vmadmin\Documents\GitHub\Calculator\Calculator\Calculator\bin\Debug\Fractions.pdb
+C:\Users\vmadmin\Documents\GitHub\Calculator\Calculator\Calculator\bin\Debug\Fractions.xml

@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Dangl.Calculator;
+using Fractions;
 
 namespace Common
 {
@@ -29,6 +30,18 @@ namespace Common
             cal.Save();
 
             return resultDouble;
+        }
+
+        public static object ConvertToFraction(string Value)
+        {
+            var ConvertedValue = Fraction.FromString(Value);
+            return ConvertedValue;
+        }
+
+        public static object ConvertToDouble(string Value)
+        {
+            var ConvertedValue = Value.ToString();
+            return ConvertedValue;
         }
 
         public void Save()

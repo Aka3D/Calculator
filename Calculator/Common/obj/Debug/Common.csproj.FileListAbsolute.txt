@@ -27,8 +27,11 @@ C:\Users\vmadmin\Documents\GitHub\Calculator\Calculator\Common\bin\Debug\Antlr4.
 C:\Users\vmadmin\Documents\GitHub\Calculator\Calculator\Common\bin\Debug\Dangl.Calculator.xml
 C:\Users\vmadmin\Documents\GitHub\Calculator\Calculator\Common\bin\Debug\EntityFramework.xml
 C:\Users\vmadmin\Documents\GitHub\Calculator\Calculator\Common\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\vmadmin\Documents\GitHub\Calculator\Calculator\Common\obj\Debug\Common.csprojAssemblyReference.cache
 C:\Users\vmadmin\Documents\GitHub\Calculator\Calculator\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
 C:\Users\vmadmin\Documents\GitHub\Calculator\Calculator\Common\obj\Debug\Common.csproj.CopyComplete
 C:\Users\vmadmin\Documents\GitHub\Calculator\Calculator\Common\obj\Debug\Common.dll
 C:\Users\vmadmin\Documents\GitHub\Calculator\Calculator\Common\obj\Debug\Common.pdb
+C:\Users\vmadmin\Documents\GitHub\Calculator\Calculator\Common\obj\Debug\Common.csproj.AssemblyReference.cache
+C:\Users\vmadmin\Documents\GitHub\Calculator\Calculator\Common\bin\Debug\Fractions.dll
+C:\Users\vmadmin\Documents\GitHub\Calculator\Calculator\Common\bin\Debug\Fractions.pdb
+C:\Users\vmadmin\Documents\GitHub\Calculator\Calculator\Common\bin\Debug\Fractions.xml

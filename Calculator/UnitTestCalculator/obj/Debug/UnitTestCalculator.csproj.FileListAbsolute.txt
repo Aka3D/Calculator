@@ -11,8 +11,8 @@ C:\Users\vmadmin\Documents\GitHub\Calculator\Calculator\UnitTestCalculator\bin\D
 C:\Users\vmadmin\Documents\GitHub\Calculator\Calculator\UnitTestCalculator\bin\Debug\Dangl.Calculator.xml
 C:\Users\vmadmin\Documents\GitHub\Calculator\Calculator\UnitTestCalculator\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
 C:\Users\vmadmin\Documents\GitHub\Calculator\Calculator\UnitTestCalculator\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
-C:\Users\vmadmin\Documents\GitHub\Calculator\Calculator\UnitTestCalculator\obj\Debug\UnitTestCalculator.csprojAssemblyReference.cache
 C:\Users\vmadmin\Documents\GitHub\Calculator\Calculator\UnitTestCalculator\obj\Debug\UnitTestCalculator.csproj.CoreCompileInputs.cache
 C:\Users\vmadmin\Documents\GitHub\Calculator\Calculator\UnitTestCalculator\obj\Debug\UnitTestCalculator.csproj.CopyComplete
 C:\Users\vmadmin\Documents\GitHub\Calculator\Calculator\UnitTestCalculator\obj\Debug\UnitTestCalculator.dll
 C:\Users\vmadmin\Documents\GitHub\Calculator\Calculator\UnitTestCalculator\obj\Debug\UnitTestCalculator.pdb
+C:\Users\vmadmin\Documents\GitHub\Calculator\Calculator\UnitTestCalculator\obj\Debug\UnitTestCalculator.csproj.AssemblyReference.cache

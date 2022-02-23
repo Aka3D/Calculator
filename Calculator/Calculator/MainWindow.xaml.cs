@@ -1,4 +1,5 @@
 ﻿using Common;
+using System;
 using System.Windows;
 
 namespace Calculator
@@ -11,19 +12,29 @@ namespace Calculator
         public MainWindow()
         {
             InitializeComponent();
+            btnDouble.Visibility = Visibility.Hidden;
         }
 
         private void calculate_Click(object sender, RoutedEventArgs e)
         {
             var resultDouble = calculate.CalculationMethod(textBox_number1.Text);
-            /*
-            string op = comboBox_Operation.Text;
-            float number1 = float.Parse(textBox_number1.Text);
-            float number2 = float.Parse(textBox_number2.Text);
-            string endresult = calculate.LoadState(number1, number2);
-            calculation.Content = $"{number1} {op} {number2} = {endresult}";
-            */
             lblcalculation.Content = resultDouble;
+        }
+
+        private void fraction_Click(object sender, RoutedEventArgs e)
+        {
+            string value = Convert.ToString(lblcalculation.Content);
+            var ConvertedValue = calculate.ConvertToFraction(value);
+            lblcalculation.Content = ConvertedValue;
+            btnFraction.Visibility = Visibility.Hidden;
+            btnDouble.Visibility = Visibility.Visible;
+        }
+
+        private void double_Click(object sender, RoutedEventArgs e)
+        {
+            lblcalculation.Content =             //Resultat aus Datenbank abrufen;
+            btnDouble.Visibility = Visibility.Hidden;
+            btnFraction.Visibility = Visibility.Visible;
         }
     }
 }
