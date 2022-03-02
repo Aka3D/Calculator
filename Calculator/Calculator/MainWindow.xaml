@@ -13,7 +13,7 @@
         Background="{DynamicResource MaterialDesignPaper}"
         FontFamily="{DynamicResource MaterialDesignFont}"
         Title="MainWindow" Height="600" Width="800" >
-    <Grid>
+    <Grid RenderTransformOrigin="0.718,0.499" Background="White">
         <Grid.RowDefinitions>
             <RowDefinition Height="35"/>
             <RowDefinition Height="50"/>
@@ -40,8 +40,33 @@
         <Label x:Name="lblresult" Content="Resultat:" Grid.ColumnSpan="5" Grid.Row="3" Margin="19.5,0,0,0" VerticalAlignment="Bottom" FontSize="15"/>
         <Label x:Name="lblcalculation" Content="" Grid.ColumnSpan="4" Grid.Row="4" Margin="19.5,0,0,0"/>
         <Button Name="btnFraction" Content="Zu Bruch konvertieren" Grid.Column="4" Grid.Row="4" HorizontalContentAlignment="Center" VerticalAlignment="Center" Margin="0" Height="23" Width="150" Click="fraction_Click"/>
-        <Button Name="btnDouble" Content="Zu Dezimal konvertieren" Grid.Column="4" Grid.Row="4" HorizontalContentAlignment="Center" VerticalAlignment="Center" Margin="0" Height="23" Width="150" Click="double_Click"/>
+        <Button Name="btnDezimal" Content="Zu Dezimal konvertieren" Grid.Column="4" Grid.Row="4" HorizontalContentAlignment="Center" VerticalAlignment="Center" Margin="0" Height="23" Width="150" Click="dezimal_Click"/>
 
         <Label x:Name="lblhistory" Content="Verlauf:" Grid.ColumnSpan="5" Grid.Row="5" VerticalAlignment="Bottom" FontSize="15" Margin="19.5,0,0,0"/>
+        <ListView Name="livHistoryList" HorizontalAlignment="Center" Grid.ColumnSpan="5" Grid.Row="6" Height="283" Margin="10,0,10.429,-252" VerticalAlignment="Top" Width="772">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Width="220"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <DataGrid x:Name="auswahlListe" AutoGenerateColumns="False" ItemsSource="{Binding}" HorizontalAlignment="Left" VerticalAlignment="Top" 
+                  Height="480" Width="495" GridLinesVisibility="Vertical" HeadersVisibility="All"
+                  Background="LightGray" RowBackground="SlateGray" AlternatingRowBackground="LightBlue"
+                  BorderBrush="Gray" BorderThickness="3" AreRowDetailsFrozen="True" FrozenColumnCount="2" 
+                  CanUserReorderColumns="False" CanUserResizeColumns="False" CanUserSortColumns = "True"
+                  VerticalScrollBarVisibility="Visible" HorizontalContentAlignment="Center" Margin="0,10,0,0">
+            <DataGrid.Columns>
+                <DataGridTextColumn IsReadOnly="True" Binding="{Binding Name}" Header="Name" Width="230"/>
+                <DataGridTextColumn IsReadOnly="True" Binding="{Binding Kaufdatum, StringFormat=\{0:dd.MM.yyyy\}}" Header="Kaufdatum" Width="80"/>
+                <DataGridTextColumn IsReadOnly="True" Binding="{Binding Bewertung}" Header="Sterne" Width="60"/>
+                <DataGridTextColumn IsReadOnly="True" Binding="{Binding Preis}" Header="Preis" Width="96"/>
+            </DataGrid.Columns>
+            <DataGrid.Resources>
+                <Style TargetType="DataGridRow">
+                    <EventSetter Event="MouseDoubleClick" Handler="Row_DoubleClick"/>
+                </Style>
+            </DataGrid.Resources>
+        </DataGrid>
     </Grid>
 </Window>

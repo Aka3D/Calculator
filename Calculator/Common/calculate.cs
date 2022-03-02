@@ -38,10 +38,10 @@ namespace Common
             return ConvertedValue;
         }
 
-        public static object ConvertToDouble(string Value)
+        public static string ConvertToDouble(object PreviousValue)
         {
-            var ConvertedValue = Value.ToString();
-            return ConvertedValue;
+            var rationalvalue = PreviousValue.ToString();
+            return rationalvalue;
         }
 
         public void Save()

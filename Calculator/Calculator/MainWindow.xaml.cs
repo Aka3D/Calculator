@@ -9,16 +9,19 @@ namespace Calculator
     /// </summary>
     public partial class MainWindow : Window
     {
+        double PreviousValue;
         public MainWindow()
         {
             InitializeComponent();
-            btnDouble.Visibility = Visibility.Hidden;
+            btnDezimal.Visibility = Visibility.Hidden;
         }
 
         private void calculate_Click(object sender, RoutedEventArgs e)
         {
             var resultDouble = calculate.CalculationMethod(textBox_number1.Text);
             lblcalculation.Content = resultDouble;
+            PreviousValue = resultDouble;
+            livHistoryList.Items.Insert(0, textBox_number1.Text + " = " + resultDouble);
         }
 
         private void fraction_Click(object sender, RoutedEventArgs e)
@@ -27,13 +30,13 @@ namespace Calculator
             var ConvertedValue = calculate.ConvertToFraction(value);
             lblcalculation.Content = ConvertedValue;
             btnFraction.Visibility = Visibility.Hidden;
-            btnDouble.Visibility = Visibility.Visible;
+            btnDezimal.Visibility = Visibility.Visible;
         }
 
-        private void double_Click(object sender, RoutedEventArgs e)
+        private void dezimal_Click(object sender, RoutedEventArgs e)
         {
-            lblcalculation.Content =             //Resultat aus Datenbank abrufen;
-            btnDouble.Visibility = Visibility.Hidden;
+            lblcalculation.Content = PreviousValue.ToString();
+            btnDezimal.Visibility = Visibility.Hidden;
             btnFraction.Visibility = Visibility.Visible;
         }
     }
