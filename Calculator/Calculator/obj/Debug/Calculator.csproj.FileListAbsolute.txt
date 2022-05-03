@@ -69,3 +69,5 @@ C:\Users\vmadmin\Documents\GitHub\Calculator\Calculator\Calculator\obj\Debug\Cal
 C:\Users\vmadmin\Documents\GitHub\Calculator\Calculator\Calculator\bin\Debug\Fractions.dll
 C:\Users\vmadmin\Documents\GitHub\Calculator\Calculator\Calculator\bin\Debug\Fractions.pdb
 C:\Users\vmadmin\Documents\GitHub\Calculator\Calculator\Calculator\bin\Debug\Fractions.xml
+C:\Users\vmadmin\Documents\GitHub\Calculator\Calculator\Calculator\obj\Debug\Alert.g.cs
+C:\Users\vmadmin\Documents\GitHub\Calculator\Calculator\Calculator\obj\Debug\Alert.baml

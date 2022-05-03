@@ -41,9 +41,9 @@
         <Label x:Name="lblcalculation" Content="" Grid.ColumnSpan="4" Grid.Row="4" Margin="20,0,0,0"/>
         <Button Name="btnFraction" Content="Zu Bruch konvertieren" Grid.Column="4" Grid.Row="3" HorizontalContentAlignment="Center" VerticalAlignment="Center" Margin="20,7,19.706,7" Height="22" Click="fraction_Click"/>
         <Button Name="btnDezimal" Content="Zu Dezimal konvertieren" Grid.Column="4" Grid.Row="3" HorizontalContentAlignment="Center" VerticalAlignment="Center" Margin="20,7,19.706,7" Height="22" Click="dezimal_Click"/>
-        <Button Name="btnSto1" Content="A" Grid.Column="0" Grid.Row="5" HorizontalContentAlignment="Center" VerticalAlignment="Center" Margin="45,10,45,48" Height="23" Width="50" Click="btnSto1_Click"/>
-        <Button Name="btnSto2" Content="B" Grid.Column="1" Grid.Row="5" HorizontalContentAlignment="Center" VerticalAlignment="Center" Margin="45,10,45,48" Height="23" Width="50" Click="btnSto2_Click"/>
-        <Button Name="btnSto3" Content="C" Grid.Column="2" Grid.Row="5" HorizontalContentAlignment="Center" VerticalAlignment="Center" Margin="45,10,45,48" Height="23" Width="50" Click="btnSto3_Click"/>
+        <Button Name="btnSto1" Content="A" Grid.Column="0" Grid.Row="5" HorizontalContentAlignment="Center" VerticalAlignment="Center" Margin="20,10,70,48" Height="23" Width="50" Click="btnSto1_Click"/>
+        <Button Name="btnSto2" Content="B" Grid.Row="5" HorizontalContentAlignment="Center" VerticalAlignment="Center" Margin="90,10,0,48" Height="23" Width="50" Click="btnSto2_Click"/>
+        <Button Name="btnSto3" Content="C" Grid.Column="1" Grid.Row="5" HorizontalContentAlignment="Center" VerticalAlignment="Center" Margin="19,10,71,48" Height="23" Width="50" Click="btnSto3_Click" RenderTransformOrigin="-0.42,0.609"/>
 
 
         <Label x:Name="lblhistory" Content="Verlauf:" Grid.ColumnSpan="5" Grid.Row="5" VerticalAlignment="Bottom" FontSize="15" Margin="20,0,-0.294,0" Height="26"/>

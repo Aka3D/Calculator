@@ -24,6 +24,12 @@ namespace Calculator
 
         public void calculate_Click(object sender, RoutedEventArgs e)
         {
+            if (string.IsNullOrEmpty(textBox_rechnung.Text))
+            {
+                Alert alert = new Alert();
+                alert.Show();
+            }
+
             var resultDouble = calculate.CalculationMethod(textBox_rechnung.Text);
             lblcalculation.Content = resultDouble;
             PreviousValue = resultDouble;
