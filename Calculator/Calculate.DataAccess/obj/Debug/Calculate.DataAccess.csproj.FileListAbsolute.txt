@@ -20,4 +20,3 @@ C:\Users\vmadmin\Documents\GitHub\Calculator\Calculator\Calculate.DataAccess\obj
 C:\Users\vmadmin\Documents\GitHub\Calculator\Calculator\Calculate.DataAccess\obj\Debug\Calculate.DataAccess.csproj.CopyComplete
 C:\Users\vmadmin\Documents\GitHub\Calculator\Calculator\Calculate.DataAccess\obj\Debug\Calculate.DataAccess.dll
 C:\Users\vmadmin\Documents\GitHub\Calculator\Calculator\Calculate.DataAccess\obj\Debug\Calculate.DataAccess.pdb
-C:\Users\vmadmin\Documents\GitHub\Calculator\Calculator\Calculate.DataAccess\obj\Debug\Calculate.DataAccess.csproj.AssemblyReference.cache

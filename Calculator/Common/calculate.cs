@@ -32,9 +32,9 @@ namespace Common
             return resultDouble;
         }
 
-        public static object ConvertToFraction(string Value)
+        public static object ConvertToFraction(double Value)
         {
-            var ConvertedValue = Fraction.FromString(Value);
+            var ConvertedValue = Fraction.FromDoubleRounded(Value);
             return ConvertedValue;
         }
 
